@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Jimmies</title>
+    <link rel="stylesheet" href="main_style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart(){
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('number','pressure');
+        data.addColumn('number','Temperature');
+        data.addColumn('number','height');
+
+        data.addRows([
+          [973,10,80.8],
+          [973,20,69.5],
+          [973,30,57],
+          [973,40,18.8],
+          [973,50,17.6],
+          [974,60,13.6],
+          [974,70,12.3],
+          [974,60,29.2],
+          [972,50,42.9],
+          [973,40,30.9],
+          [974,30,7.9],
+          [973,20,8.4],
+          [973,10,6.3],
+        ]);
+        var options ={
+          chart: {
+            title: 'Height and Temperature by Time',
+            subtitle: 'Time in Minutes'
+          }
+        };
+        var chart = new google.charts.Line(document.getElementById('linechart_material'));
+          chart.draw(data, google.charts.Line.convertOptions(options));
+          window.addEventListener('resize', drawChart, false);
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li>
+                <a href="index.html">
+                    <img class="logo"src="photos/Astro_Jimmies_Logo_Patch_Final_1.png" alt="logo">
+                </a>
+            </li>
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="about.html">About</a></li>
+                <li class="links"><a href="data.html">Data</a></li>
+                <li class="links"><a href="missions.html">Missions</a></li>
+            </ul>
+        </nav>
+        <h1>Data</h1>
+    </header>
+    <section>
+      <p class="warning">
+        Please have phone in landscape mode to read graph
+      </p>
+        <div id="linechart_material" class="chart"></div>
+    </section>
+    <footer></footer>
+</body>
+</html>

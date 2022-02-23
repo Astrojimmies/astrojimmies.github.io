@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'changa_oneregular';
+    src: url('font/changa-one.regular.woff2') format('woff2'),
+         url('font/changa-one.regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+.about_crew{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+header{
+    background: black;
+    color: white;
+    background-image: url("photos/Payload.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    margin-top: -80px;
+    text-align: center;
+    font-size: 40px;
+
+}
+.home_page{
+    height: 600px;
+}
+.home_page h1{
+    margin-top: 140px;
+    font-size: 60px;
+}
+body{
+    font-family: changa_oneregular;
+    margin: 0px;
+}
+nav ul{
+    margin-top: 0px;
+    padding: 10px 10px;
+    display: block;
+}
+nav li{
+    margin-right: 10px;
+    display: inline;
+}
+
+header .links a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.links a:hover{
+    opacity: 75%;
+}
+
+section .homepage{
+    position: relative;
+    text-align: center;
+}
+.chart{
+    margin: 30px;
+    height: 100%;
+    min-height: 450px;
+}
+.missions{
+    position: relative;
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 90vw;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 4px gray;
+}
+.payloads{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.mission_years{
+    text-align: center;
+}
+header .logo{
+    float: left;
+    display: inline;
+    height: 80px;
+    width: auto;
+}
+.about{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 25px 50px;
+    font-size: 20px;
+}
+.about_photos{
+    width: 100%;
+    margin-top: -3px;
+}
+.about_photos_big{
+    width: 100%;
+}
+.photo_align{
+    float: left;
+    width: 50%;
+}
+.mission_text{
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+.warning{
+    text-align: center;
+}
+@media screen and (min-width: 533px){
+    header .links a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    header .logo{
+        float: left;
+        display: inline;
+        height: 100px;
+        width: auto;
+    }
+    section .about{
+        display: block;
+        position: relative;
+        text-align: center;
+        margin: 50px 100px;
+        font-size: 25px;
+    }
+    .warning{
+        visibility: hidden;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 700px){
+    .missions{
+        position: relative;
+        text-align: center;
+        color: black;
+        float: left;
+        border-radius: 50%;
+        overflow: hidden;
+        height: 40vw;
+        width: 40vw;
+        margin: 4%;
+        box-shadow: 2px 2px 4px gray;
+    }
+}
