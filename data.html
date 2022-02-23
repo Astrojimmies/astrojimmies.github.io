@@ -14,8 +14,8 @@
       function drawChart(){
 
         var data = new google.visualization.DataTable();
-        data.addColumn('number','height');
-        data.addColumn('number','pressure');
+        data.addColumn('number','Height');
+        data.addColumn('number','Pressure');
         data.addColumn('number','Temperature');
 
         data.addRows([
@@ -1211,8 +1211,8 @@
         ]);
         var options ={
           chart: {
-            title: 'Height and Temperature by Time',
-            subtitle: 'Time in Minutes'
+            title: 'Pressure and Temperature by Height',
+            subtitle: 'Height in meters'
           },
           series: {
             0: {axis: 'pressure'},
@@ -1220,8 +1220,8 @@
           },
           axes: {
             y: {
-            pressure: {lable: "pressure (millibars)"},
-            Temperature: {lable: "Temperature (Celcius)"} 
+            pressure: {label: "pressure (millibar)"},
+            Temperature: {label: "Temperature (Celcius)"} 
             }
           }
         };
