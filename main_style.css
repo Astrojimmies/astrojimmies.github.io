@@ -138,11 +138,22 @@ header .logo{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+@media screen and (min-width: 0px) and (max-width: 400px){
+    header .links a{
+        font-size: 13px;
+    }
+    nav li{
+        margin-right: 5px;
+    }
+    header .logo{
+        height: 60px;
+    }
+    .home_page{
+        height: 400px;
+    }
+}
 @media screen and (min-width: 533px){
     header .links a{
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
         font-size: 20px;
     }
     header .logo{
