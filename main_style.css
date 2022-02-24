@@ -131,6 +131,13 @@ header .logo{
 .warning{
     text-align: center;
 }
+.social_icons{
+    display: inline-block;
+    margin-left: 45%;
+    width: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 @media screen and (min-width: 533px){
     header .links a{
         text-decoration: none;
@@ -157,6 +164,10 @@ header .logo{
     }
     .chart{
         visibility: visible;
+    }
+    .social_icons{
+        width: 5%;
+        margin-left: 47.5%;
     }
 }
 @media screen and (min-width: 700px){
