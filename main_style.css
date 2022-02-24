@@ -73,6 +73,7 @@ section .homepage{
     margin: 30px;
     height: 100%;
     min-height: 450px;
+    visibility: hidden;
 }
 .missions{
     position: relative;
@@ -153,6 +154,9 @@ header .logo{
     .warning{
         visibility: hidden;
         font-size: 15px;
+    }
+    .chart{
+        visibility: visible;
     }
 }
 @media screen and (min-width: 700px){
