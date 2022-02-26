@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro Jimmies</title>
     <link rel="stylesheet" href="main_style.css">
+    <script>
+        var countDownDate = new Date("Apr 29, 2022 00:00:00").getTime();
+
+        var x = setInterval(function() {
+            
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("count_to_launch").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s " + "<br>" + "Till  Launch Day!";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("count_to_launch").innerHTML = "LAUNCH!";
+            }
+        }, 1000);
+    </script>
 </head>
 <body>
     <header class="home_page">
@@ -25,35 +47,10 @@
         <h1>Home</h1>
     </header>
     <section>
-        <h2 class='homepage'>
-            About the crews
-        </h2>
-        <h2>
-            Science Crew
-        </h2>
-        <p class="about_crew">
-            The science crew does science stuff
-        </p>
-        <h2>
-            Payload Crew
-        </h2>
-        <p class="about_crew">
-            The payload crew builds the payload
-        </p>
-        <h2>
-            Photo/Video Crew
-        </h2>
-        <p class="about_crew">
-            The photo/video crew documents the process
-        </p>
-        <h2>
-            logo Crew
-        </h2>
-        <p class="about_crew">
-            The logo crew disigns the logos and clothes for the mission
-        </p>
+        <p id="count_to_launch" class="count_down_timer"></p>
     </section>
     <footer>
+        <p class="push_to_instagram">Head over to our Instagram page to see what we are up to!</p>
         <a class="icon_container" href="https://www.instagram.com/astrojimmies/">
             <img  class="social_icons" src="photos/insta_icon.png" alt="instagram link">
         </a>

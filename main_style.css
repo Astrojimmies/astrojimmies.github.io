@@ -138,6 +138,14 @@ header .logo{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.count_down_timer{
+    text-align: center;
+    font-size: 40px;
+}
+.push_to_instagram{
+    text-align: center;
+    font-size: 17px;
+}
 @media screen and (min-width: 0px) and (max-width: 400px){
     header .links a{
         font-size: 13px;
