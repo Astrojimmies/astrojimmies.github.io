@@ -146,6 +146,15 @@ header .logo{
     text-align: center;
     font-size: 17px;
 }
+.Science_Talk p{
+    text-align: center;
+    font-size: 25px;
+    margin:30px;
+}
+.Science_Talk h2{
+    margin: 30px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 400px){
     header .links a{
         font-size: 13px;
